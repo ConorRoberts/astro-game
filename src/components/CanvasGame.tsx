@@ -181,7 +181,7 @@ export const CanvasGame = () => {
           direction: dir,
         },
       ]);
-    }, 5);
+    }, 1);
   });
 
   // createEffect(() => {
