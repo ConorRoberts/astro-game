@@ -8,7 +8,7 @@ type Enemy = { position: Position; id: string; direction: Direction };
 type DirectionKey = "w" | "a" | "s" | "d";
 
 const MOVEMENT_DISTANCE = 2;
-const ENEMY_MOVEMENT_DISTANCE = 5;
+const ENEMY_MOVEMENT_DISTANCE = 1;
 const PLAYER_SIZE = 50;
 const ENEMY_SIZE = 10;
 const DIRECTION_MAGNITUDES: Record<
@@ -181,7 +181,7 @@ export const CanvasGame = () => {
           direction: dir,
         },
       ]);
-    }, 10);
+    }, 5);
   });
 
   // createEffect(() => {
